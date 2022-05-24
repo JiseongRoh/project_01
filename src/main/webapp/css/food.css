@@ -1,0 +1,40 @@
+.jumbotron {
+		height: 450px;
+ 		color: white;
+ 		text-shadow: 0.1em 0.1em 0.1em black;
+ 		padding: 30px;
+ 	}
+ 	
+.bg1 {
+/* 	background-color:  rgba( 0, 0, 0, 0.5);
+	 */
+	height: 290px;
+	width: 390px;
+	text-shadow: 0.1em 0.1em 0.1em black;
+	vertical-align: bottom;
+	
+/* 	transition-property: background-color;
+	transition-duration: 1s; */
+	}
+	.bg1:hover {
+/* 		background-color: rgba( 0, 0, 0, 0.0); */
+	}
+
+ .bg2 {
+ 	height: 290px;
+	width: 390px;
+	vertical-align: bottom;
+	text-shadow: 0.1em 0.1em 0.1em black;
+ }
+ .bg3 {
+ 	height: 290px;
+	width: 390px;
+	text-shadow: 0.1em 0.1em 0.1em black;
+	vertical-align: bottom;
+ 
+ }
+ 
+ .btn {
+ 	text-shadow: 0 0 0 black;
+ 	font-weight: bold;
+ }

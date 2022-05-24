@@ -1,0 +1,168 @@
+	body {
+		background-image:url("./bg.jpg");
+		background-repeat: no-repeat;
+	    background-size: 100%;
+	    background-color: #333333;
+	}
+
+	table {
+		border-radius: 7px;
+		background-color: rgba( 255, 255, 255, 0.87 );
+		border: 0px solid #000000;
+	}
+
+	tr {
+		height: 80px;
+		border-width: 0px;
+	}
+
+	th {
+		border-width: 0px;
+	}
+	
+	th#title {
+		font-size: 30pt;	
+		font-family: Arial;
+		font-weight: bold;
+		color: #444455;
+	}
+
+	td {
+		border: 1px solid black;
+		font-family: Arial;
+		width: 100px;
+		border: 1px solid #aaaaaa;
+		font-weight: bold;
+	}
+	
+	td#sunday {
+		font-size: 18pt;
+		color: red;
+		text-align: center;/* 수평 정렬 */
+	}
+	
+	td.etcday {
+		font-size: 18pt;
+		color: #000000;
+		text-align: center;
+	}
+	
+	td#saturday {
+		font-size: 18pt;
+		color: navy;
+		text-align: center;
+	}
+	
+	td.sun {
+		font-size: 15pt;
+		color: #ff0000;
+		text-align: right;
+		vertical-align: top;
+	}
+	
+	td.etc {
+		font-size: 15pt;
+		color: #000000;
+		text-align: right;
+		vertical-align: top;
+	}
+	
+	td.sat {/* 개별속성 */
+		font-size: 15pt;
+		color: navy;
+		text-align: right;
+		vertical-align: top;
+	}
+	
+	td.beforesun{
+		color: #dd8888;
+		text-align: right;
+		vertical-align: top;	
+		background-color: rgba( 215, 215, 215, 0.8 );
+	}
+	
+	td.before{
+		color: #999999;
+		text-align: right;
+		vertical-align: top;	
+		background-color: rgba( 215, 215, 215, 0.8 );
+	}
+	
+	td.aftersat{
+		color: #8888dd;
+		text-align: right;
+		vertical-align: top;	
+		background-color: rgba( 215, 215, 215, 0.8 );
+	}
+	
+	td.after{
+		color: #999999;
+		text-align: right;
+		vertical-align: top;	
+		background-color: rgba( 215, 215, 215, 0.8 );
+	}
+	
+
+	.button {
+	  width: 40px;
+	  border: none;
+	  color: white;
+	  padding: 3px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 20px;
+	  margin: 1px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	  border-radius: 4px;
+	}
+
+	.button1 {
+	  background-color: #eeeeee; 
+	  color: black; 
+	  border: 2px solid #cccccc;
+	}
+
+	.button1:hover {
+	  background-color: #dddddd;
+	  color: navy;
+	}
+	
+
+
+	.select {
+		font-size: 15px;
+		text-align: center;
+		margin-left: 10px;
+		width: 90px;
+		height: 30px;
+		background-color: rgba( 255, 255, 255, 0.3);
+	}
+	
+	.selectbtn {
+		width: 70px;
+		height: 30px;
+	    padding: 3px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: 1px;
+	    transition-duration: 0.4s;
+	    cursor: pointer;
+	    border-radius: 3px;
+	    border: 0.5px solid #888888;
+	}
+	
+	
+	td.holiday {
+		font-size: 15pt;
+		color: red;
+		text-align: right;
+		vertical-align: top;
+	}
+	
+	span {
+		font-family: Arial;	
+		font-size: 10pt;
+	}

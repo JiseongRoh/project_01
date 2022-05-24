@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HANSON-NORITER</title>
+<link rel="stylesheet" href="./css/bootstrap.css"/>
+<link rel="icon" href="./images/hanwha_logo.png">
+<link rel="stylesheet" href="./css/food.css"/>
+<style type="text/css">
+	body {
+		background-color: black;
+		color: white;
+		
+	}
+	.jumbotron {
+		background-image: url("./images/main.png");
+		background-color: #FFA500;
+		background-size: 60% 100%;
+		background-repeat: no-repeat;
+	}
+	.bg1 {
+		background-image: url("./images/bg1_1.jpg");
+		background-size: cover;
+		max-width: 100%
+	}
+	.bg2 {
+		background-image: url("./images/bg1_2.jpg");
+		background-size: cover;
+		max-width: 100%
+	}
+	.bg3 { 
+		background-image: url("./images/bg1_3.jpg");
+		background-size: cover;
+		max-width: 100%
+	}
+	
+</style>
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<!-- 내비게이션 -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<div class="navbar-header">
+
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggle"
+					aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="./1_index.html">HANSON-NORITER</a>
+			</div>
+			
+			
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				
+				<ul class="nav navbar-nav">
+
+					<li>
+						<a href="./2_1_pollRead.jsp">이달의 투표</a>
+					</li>	
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							회사<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="./3_1_calendar.jsp">회사일정</a></li>
+							<li><a href="./3_2_application.jsp">신청</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							동호회<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="./4_1_1_camping.html">캠핑동호회</a></li>
+							<li><a href="./4_2_1_mountain.html">산악동호회</a></li>
+							<li><a href="./4_3_1_coffee.html">커피동호회</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							게시판<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="./list.jsp">한손마켓</a></li>
+							<li><a href="./5_2_information-board.jsp">정보공유</a></li>
+							<li><a href="./5_3_anonymous-board.jsp">익명게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+
+
+
+				<form class="navbar-form navbar-left">
+					 <div class="input-group">
+				        	<input type="text" class="form-control" placeholder="Search" name="search">
+					        <div class="input-group-btn">
+					          	<button class="btn btn-default" type="submit">
+					            	<i class="glyphicon glyphicon-search"></i>
+					     	     </button>
+					        </div>
+				      </div>
+				</form>
+			
+	
+				<ul class="nav navbar-nav navbar-right">
+					<li class="login">
+							<li><a href="./6_1_loginForm.html">로그인</a></li>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!-- 내비게이션 끝 -->
+
+	<br/><br/>
+
+	<div class="container" >
+	
+	<!-- 점보트론  -->
+		<div class="jumbotron">
+	 		<h1 class="text-right" style="font-size: 40px;">HANSON</h1>
+	 		<h1 class="text-right" style="font-size: 50px;">NORITER</h1><br/>
+	 		<p class="text-right" style="font-size: 20px;">
+				무슨 내용을 넣어야 할까 <br/>
+				모르겠담<br/>
+	 		</p><br/>
+	 		<p class="text-right">
+				<a class="btn btn-warning" href="https://www.hanwhasonsa.co.kr/" target=”_blank” role="button" style="font-weight: bold; color: #552222; text-shadow: none; ">공식 홈페이지</a>
+			</p>
+		</div>
+		
+		<br/><br/><br/><br/>
+	
+		
+	     <!-- 메인 컨텐츠 -->
+	    <div class="panel panel-warning">
+			<!-- heading -->    	
+	    	<div class="panel-heading">
+	    		<h3 class="panel-title"> 
+	    			<span class="glyphicon-pencil"></span> 사내 주요뉴스
+	    		</h3>
+	    	</div>
+			<!-- body -->    	
+	    	<div class="panel-body" style="background-color: #000000;">
+	    		
+				<!-- 미디어 1 -->    		
+				<div class="media">
+					<div class="media-left">
+							<img src="./images/main_1.jpg" height="100px" width="150px">				
+						</a>
+					</div>
+					
+					<div class="media-body">
+						<h4 class="media-heading">
+						<span class="badge">NEW</span>
+						<a href="https://www.hanwhasonsa.co.kr/media/news/view">한화손해사정 '일자리창출 유공' 정부 포상</a>
+						</h4>
+						한화손해사정(대표이사 문정근)이 12월 23일 고용노동부로부터 '일자리창출 유공' 정부 포상을 받았습니다. <br/>
+						한화손해사정의 높은 정규직 전환률을 통한 임직원 고용 안정, PC-OFF제 및 유연근무제 등을 통한 적정 노동시간 보장, <br/>
+						청년·여성·장애인·장년 일자리 배려 및 지방 우수인재·능력중심 채용, 안전한 근로환경 구축 및 환경 개선, 직무능력 향상교육, <br/>
+						매칭그랜트 제도를 통한 임직원의 후원금 출연 및 다양한 사회 공헌 활동 등의 공로를 인정 받아 포상의 영예를 안았습니다. <br/>
+					</div>
+				</div>
+				
+				<br/>
+				
+				<!-- 미디어 2 -->    		
+				<div class="media">
+					<div class="media-left">
+							<img src="./images/main_2.jpg" height="100px" width="150px">						
+						</a>
+					</div>
+					
+					<div class="media-body">
+						<h4 class="media-heading">
+						<span class="badge">NEW</span>
+						<a href="https://www.donga.com/news/article/all/20211216/110824381/1">한화손해사정 '가족친화 우수기업' 대통령 표창 수상</a>
+						</h4>
+						한화손해사정(대표이사 문정근)이 12월 16일 여성가족부로부터 '가족친화 우수기업' 대통령 표창을 수상하였습니다. <br/>
+						한화손해사정은 2013년 최초 여성가족부가 주관하는 가족친화 우수기업으로 인증 받은 뒤 현재까지 임직원들의 자녀 · 출산 양육 지원과 <br/>
+						일 ·생활 균형을 위한 조직문화를 성공적으로 정착시킨 공로를 인정 받아 수상의 영예를 안았습니다. <br/>
+					</div>
+				</div>
+	
+				<br/>
+				
+				<!-- 미디어 3 -->    		
+				<div class="media">
+					<div class="media-left">
+							<img src="./images/main_3.png" height="100px">						
+						</a>
+					</div>
+					
+					<div class="media-body">
+						<h4 class="media-heading">
+						<span class="badge">NEW</span>
+						<a href="https://www.fnnews.com/news/202008050954257354">한화손해사정 "2020년 대한민국 일자리 으뜸기업" 선정</a>
+						</h4>
+						「대한민국 일자리 으뜸기업」은 고용노동부에서 고용창출 및 일과생활 균형의 모범적 실천 등 양질의 일자리 창출에 기여한 기업에게 수여하는 상입니다.<br/>
+						한화손해사정은 청년고용 등 고용창출 우수, 일자리 배려, 노사상생을 통한 동반성장, 일생활균형 실천 등의 항목에서 높은 평가를 받아<br/>
+						「2020년도 대한민국 일자리 으뜸기업」에 선정되어 대통령 인증패를 수여 받는 영광을 안았습니다.
+					</div>
+					<br/>
+				</div>
+	
+	    	</div>
+	    </div>
+	    
+	    
+	    <br/><br/><br/><br/><br/><br/>
+		
+		
+	    	
+		
+	<div class="container" style="width: 1800px; background-color: black; overflow: auto;">
+
+		<!-- 모달  -->
+		<div class="row" style="height: 300px; display: block;">
+
+			<!-- 4 -->
+			<div class="col-md-4 bg1" style="height: 300px; ">
+				<h4>에디터 추천</h4>
+				<p>
+					가장 높은 평점을 받은 음식점을 추천해드립니다.
+				</p>
+				<!-- 버튼 -->
+				<p><a class="btn btn-success" data-target="#modal" data-toggle="modal">보러가기</a></p>
+			</div>
+
+			
+			<!-- 4 -->
+			<div class="col-md-4 bg2" style="height: 300px;">
+				<h4>서울의 주방장</h4>
+				<p>
+					미식 가이드의 원천, 서울의 주방장들을 소개합니다.
+				</p>
+				<!-- 버튼 -->
+				<p><a class="btn btn-success" href="./7_instructor.html">리스트 보기</a></p>
+			
+			</div>
+			
+			<!-- 4 -->
+			<div class="col-md-4 bg3" style="height: 300px;">
+				<h4>실제 후기</h4>
+				<p>
+					미식평가원의 리뷰를 유튜브로 확인하세요.
+				</p>
+				<!-- 버튼 -->
+				<p><a class="btn btn-success" data-target="#modal1" data-toggle="modal">자세히 알아보기</a></p>
+<!-- 				<p><a class="btn btn-success" href="https://www.youtube.com/embed/iz7cvkthv1Y">자세히 알아보기</a></p> -->
+			
+			</div>
+			
+		
+		</div>
+		
+	</div>
+		<br/><br/><br/><br/><br/>
+	    
+		
+	    
+	</div><!-- 점보트론 앞 (container) 끝 -->
+	
+
+	<!-- 모달 팝업으로 표시할 내용 -->
+    <div class="modal" id="modal">
+    	<div class="modal-dialog">
+    		<div class="modal-content" style="background-color: #000000;">
+    			<div class="modal-header">
+    				
+	    				에디터 추천
+    				<button class="close" data-dismiss="modal" style="color: #FFFFFF;"></button>
+    			</div>
+    			<div class="modal-body">
+    				
+    				<img src="./images/pick1.png" style=" width: 550px;"><br/>
+    				<hr>
+    				<a href="http://bandb.co.kr/" style="font-weight: bold;">
+    				한우 비프 다이닝 - 본앤브레드 <br/>
+    				</a>
+    				축산시장으로 유명한 마장동에 자리 잡은 고기 명가.<br/> 
+    				<br/>
+    				<img src="./images/pick2.png" style=" width: 550px;"><br/>
+    				<hr>
+    				최상 등급의 한우를 이용해 한국형 오마카세를 제대로 선보인다.<br/>
+    				<br/>
+    				<img src="./images/pick3.png" style=" width: 550px;"><br/>
+    				<hr>
+    				1층은 정육점이자 라운지로, 지하 1층은 오마카세 코스를 선보이는 바로,<br/>
+    				2층은 10여 가지 부위를 즐기는 샤브샤브 등 캐주얼 다이닝을, 3층은
+					프라이빗 다이닝으로 운영된다.
+    				<br/>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal" id="modal1">
+    	<div class="modal-dialog">
+    		<div class="modal-content" style="background-color: #000000;">
+    			<div class="modal-header">
+    				미식평가원 리뷰 영상
+    				<button class="close" data-dismiss="modal" style="color: #FFFFFF;"></button>
+    			</div>
+    			<div class="modal-body">
+    				<a href="https://www.bicena.com/">
+	    				시그니엘 호텔 - 비채나
+    				</a>
+    				<iframe style="height: 600px; width: 570px;" class="embed-responsive-item" src="https://www.youtube.com/embed/STDMkDs816U"></iframe>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    
+    <br/><br/><br/><br/><br/>
+   
+    <div></div>
+
+<!-- 풋터 -->
+	<footer style="background-color: #FFA500; color: #FFFFFF;">
+	
+		<div class="container">
+		
+			<div class="row">
+
+				<div class="col-sm-2" style="text-align: center;"> 
+					<h5>Copyright</h5>
+					<h5>
+					김동현 <br/>
+					권주영 <br/>
+					노지성
+					</h5>
+				</div>
+				
+				<div class="col-sm-4"> 
+
+					<h6 style="line-height: 1.8;">
+					<br/>
+					<span class="glyphicon glyphicon-map-marker"></span>
+					서울시 마포구 마포대로 155, 16층(공덕동, LG마포빌딩) <br/>
+					<span class="glyphicon glyphicon-earphone"></span> 02-325-4126
+					</h6>
+				</div>
+
+
+				<div class="col-sm-2" style="text-align: center;"> 
+					<h5>바로가기</h5>
+					<div class="list-group">
+						<a href="./2_1_pollRead.jsp" class="list-group-item">이달의투표</a>
+						<a href="./3_1_calendar.jsp" class="list-group-item">회사일정</a>
+						<a href="./3_2_application.jsp" class="list-group-item">신청</a>
+					</div>
+				</div>
+				
+				<div class="col-sm-2" style="text-align: center;"> 
+					<h5>Family Site</h5>
+					<div class="list-group">
+						<a href="https://hcc.circle.hanwha.com/neo/index.mvc" class="list-group-item" target=”_blank”>Circle</a>
+						<a href="https://hcc.circle.hanwha.com/neo/index.mvc" class="list-group-item" target=”_blank”>그룹웨어</a>
+						<a href="https://hcc.circle.hanwha.com/neo/index.mvc" class="list-group-item" target=”_blank”>Smart-HR</a>
+					</div>
+				</div>
+				
+				
+				<div class="col-sm-2"> 
+					<h5 style="text-align: center;">
+					<span class="glyphicon glyphicon-ok"></span><br/>
+					 ©2018 Hanwha I&A CO. <br/> LTD ALL RIGHTS RESERVED.
+					</h5>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+<!-- 풋터 끝 -->
+
+</body>
+</html>

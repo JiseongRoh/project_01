@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tjoeun.vo.HSmarketVO">
+
+	<!-- 메인글 1건을 저장한다. -->
+	<insert id="insert" parameterType="vo">
+		insert into HSMARKET (hs_idx, hs_name, hs_password, hs_subject, hs_content, hs_notice, hs_ip) 
+		values (hamarket_idx_seq.nextval, #{hs_name}, #{hs_password}, #{hs_subject}, #{hs_content}, #{hs_notice}, #{hs_ip})
+	</insert>
+	
+	<!-- 메인글의 개수를 얻어온다. -->
+	<select id="selectCount" resultType="int">
+		select count(*) from HSMARKET
+	</select>
+	
+	<!-- 1페이지 분량의 메인글을 얻어온다. -->
+	<select id="selectList" parameterType="java.util.HashMap" resultType="vo">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from freeboard order by idx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 조회수를 증가시킨다. -->
+	<update id="increment" parameterType="int">
+		update HSMARKET set hit = hit + 1 where hs_idx = #{hs_idx}
+	</update>
+	
+	<!-- 메인글 1건을 얻어온다. -->
+	<select id="selectByIdx" parameterType="int" resultType="vo">
+		select * from HSMARKET where hs_idx = #{hs_idx}
+	</select>
+	
+	<!-- 메인글 1건을 삭제한다. -->
+	<delete id="delete" parameterType="int">
+		delete from HSMARKET where hs_idx = #{hs_idx}
+	</delete>
+	
+	<!-- 모든 공지글을 얻어온다. -->
+	<select id="selectNotice" resultType="vo">
+		select * from HSMARKET where notice = 'yes' order by hs_idx DESC
+	</select>
+	
+	<!-- 메인글 1건을 수정한다. -->
+	<update id="update" parameterType="vo">
+		update HSMARKET set hs_subject = #{hs_subject}, hs_content = #{hs_content}, hs_notice = #{hs_notice} where hs_idx = #{hs_idx}
+	</update>
+	
+</mapper>
